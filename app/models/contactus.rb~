@@ -1,0 +1,8 @@
+class Contactus < ActiveRecord::Base
+   def initialize(n , e , m)
+      @name=n
+      @email=e
+      @message=m
+   end
+  
+end

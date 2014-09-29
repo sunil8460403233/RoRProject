@@ -1,0 +1,14 @@
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <p>&copy; Copyright Beachstrap 2013. All rights reserved.</p>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <p class="sn-links"><a href="#" title="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a></p>
+      </div>
+    </div>
+  </div>
+</footer>

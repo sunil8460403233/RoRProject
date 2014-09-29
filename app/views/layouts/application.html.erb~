@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%= render :partial => "layouts/meta_content" %>
+  <%= csrf_meta_tags %>
+
+  <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+  <title>Beachstrap</title>
+
+
+  <%= render :partial => "layouts/stylesheet_include" %>
+  <%= render :partial => "layouts/javascript_include" %>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navigation">
+<%= yield %>
+<div id="content">
+
+<%= render :partial => "layouts/header" %>
+
+<!-- mainImage -->
+<div id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-lg-offset-5 col-md-8 col-md-offset-4 col-sm-10 col-sm-offset-1 col-xs-12">
+        <div class="cont-wrapper">
+          <p class="intro">
+          <table>
+            <tr class="tablerow">
+              <td><div class="big">&nbsp;</div></td>
+              <td ><img src="../assets/heart_trans_mono.png" height="155px" class="center"/></td>
+              <td><img src="/assets/brain_trans_mono.png" height="155px" class="center"/></td>
+              <td><img src="../assets/guts_trans_mono.png" height="155px" class="center"/></td>
+
+              <td><img src="../assets/luck_trans_mono.png" height="155px" class="center"/></td>
+            </tr>
+            <tr>
+              <td><div class="big">&nbsp;</div></td>
+              <td><p class="qualityheart">HEART,</p></td>
+              <td><p class="qualitysmarts">SMARTS,</p></td>
+              <td><p class="qualityguts">GUTS</p></td>
+
+              <td><p class="qualityluck">LUCK</p></td>
+            </tr>
+          </table>
+          <span class="small">and</span>
+          <!--<p>
+
+
+                 <p class="btn-wrp"><a class="c2a-button">Call to action</a></p>-->
+          <div class="gonnaneed"><img  src="../assets/youregonna.png"></div>
+        </div><!-- end cont wrapper -->
+
+      </div><!-- end 8 -->
+      <p class="intro2">
+        We believe 50% of your luck is actually based<br/>on the quality of your real world connections.<br/>
+      </p>
+    </div>
+  </div><!-- end container -->
+</div><!-- end row -->
+
+<!-- ======================= CAROUSEL ========================= -->
+
+<div id="work">
+  <div id="myCarousel" class="carousel slide">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+
+            <!-- item -->
+            <div class="item active">
+              <!-- edit contents here -->
+              <div class="container">
+                <h1>Example headline.</h1>
+                <div class="caption">
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <img src="../assets/responsiveShot.png" alt="responsiveShot" class="img-responsive" >
+              <p class="btn-wrp"><a class="c2a-button">Call to action</a></p>
+              <!-- stop editing here -->
+            </div>
+            <!-- end item -->
+
+            <!-- item -->
+            <div class="item">
+              <!-- edit contents here -->
+              <div class="container">
+                <h1>Example headline.</h1>
+                <div class="caption">
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <img src="../assets/responsiveShot.png" alt="responsiveShot" class="img-responsive" >
+              <p class="btn-wrp"><a class="c2a-button">Call to action</a></p>
+              <!-- stop editing here -->
+            </div>
+            <!-- end item -->
+
+            <!-- item -->
+            <div class="item">
+              <!-- edit contents here -->
+              <div class="container">
+                <h1>Example headline.</h1>
+                <div class="caption">
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <img src="../assets/responsiveShot.png" alt="responsiveShot" class="img-responsive" >
+              <p class="btn-wrp"><a class="c2a-button">Call to action</a></p>
+              <!-- stop editing here -->
+            </div>
+            <!-- end item -->
+
+          </div><!-- end carousel inner -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+      </div>
+    </div>
+  </div><!-- end carousel -->
+</div><!-- end work -->
+
+<!-- ========================= PARALLAX BACKGROUND STRIP ================================ -->
+
+<div id="parallax" data-speed="8" class="hidden-sm hidden-xs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2>Parallax backgrounds for an ultra modern web experience!</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========================= TEAM STRIP ================================ -->
+<div id="our-team">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <h2>Our Team</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+      </div>
+    </div><!-- end row -->
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="staff-mem">
+          <img src="../assets/heart_big.png" class="img-responsive img-circle">
+          <h3>Heart</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          <p class="sn-links">
+            <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+          </p>
+        </div>
+      </div><!-- end 3 -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="staff-mem">
+          <img src="../assets/brain_big.png" class="img-responsive img-circle">
+          <h3>Smarts</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          <p class="sn-links">
+            <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+          </p>
+        </div>
+
+      </div><!-- end 3 -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="staff-mem">
+          <img src="../assets/guts_big.png" class="img-responsive img-circle">
+
+          <h3>Guts</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          <p class="sn-links">
+            <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+          </p>
+        </div>
+      </div><!-- end 3 -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3">
+        <div class="staff-mem">
+          <img src="../assets/luck_big.png" class="img-responsive img-circle">
+          <h3>Luck</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+          <p class="sn-links">
+            <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+          </p>
+        </div>
+      </div><!-- end 3 -->
+
+    </div><!-- end row -->
+  </div><!-- end container -->
+</div>
+
+<!-- ========================= SIGN UP STRIP ================================ -->
+
+<div id="signup">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <h3>Sign up for the newsletter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. </p>
+
+        <div class="row">
+          <form role="form">
+            <div class="col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-9   col-xs-12">
+              <input type="email" class="form-control"  placeholder="Enter email">
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-12"><button type="submit" class="btn btn-db">Sign up now!</button></div>
+          </form>
+        </div>
+      </div>
+    </div><!-- end row -->
+
+  </div><!-- end container -->
+</div><!-- end signup -->
+
+<!-- ========================== CONTACT =========================== -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        <h2 class="">Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. </p>
+        <%= form_tag("/contact_render", method:"get") do %>
+          <p>
+             <%= text_field_tag 'name','' , class: 'form-control', placeholder: 'Enter Name'%></p>
+          <p><input class="form-control" placeholder="Enter email"></p>
+          <p><textarea class="form-control" rows="3"></textarea></p>
+          <p><button type="submit" class="btn btn-db">Send</button></p>
+        <%end%>
+      </div>
+    </div><!-- end row -->
+  </div><!-- end container -->
+</div><!-- end contact -->
+
+
+<!-- ========================== BLOG =========================== -->
+<div id="blog">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <h2>Our Blog</h2>
+      </div>
+    </div><!-- end row -->
+
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 post">
+        <h3>Post Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <div class="post-pic">
+          <img data-src="holder.js/370x240" class="img-responsive">
+        </div>
+
+        <p class="sn-links">
+          <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 post">
+        <h3>Post Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <div class="post-pic">
+          <img data-src="holder.js/370x240" class="img-responsive">
+        </div>
+
+        <p class="sn-links">
+          <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 post">
+        <h3>Post Title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+        <div class="post-pic">
+          <img data-src="holder.js/370x240" class="img-responsive">
+        </div>
+        <p class="sn-links">
+          <a href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+          <a href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" title="linked-in"><i class="fa fa-linkedin-square"></i></a>
+        </p>
+      </div>
+    </div><!-- end row -->
+  </div><!-- end container -->
+</div><!-- end blog -->
+
+<%= render :partial => "layouts/footer" %>
+</div><!-- end content -->
+
+
+</body>
+</html>

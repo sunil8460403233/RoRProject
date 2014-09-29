@@ -1,0 +1,24 @@
+class ContactusController < ApplicationController
+    def contact
+      @contactus=Contactus.new
+    end 
+   
+   def create
+      new_attributes = params.require(:contactus).permit(:name, :email, :message)
+      @contactus=Contactus.new(new_attributes)
+      if @contactus.save
+         QueryMailer.feedback_email(params[:email]).deliver
+          
+      else
+        render 'fails'
+      end
+    end
+   def fails
+      
+   end
+   
+   def success
+   end
+
+
+end
